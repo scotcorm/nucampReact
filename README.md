@@ -1,13 +1,6 @@
-# Citation Manager Site with React and Redux
+# Nucamp Site Project with React, Redux and More
 
 ## About this Project
-Copyright is always a concern when people are sharing information online, and the citation 
-records for images, in particular, can be relatively complex. I hope to build a site that makes it 
-easy to find great images, along with their citation information. Hopefully, providing a curated
-list will encourage the use and reuse of clearly licensed online images.
-
-Also, since I'm learning about what React is capable of, I look forward to applying lessons about 
-things like Breadcrumbs, linking to a database, and maybe allowing users to login to save their own records. 
 
 
 ## Available Scripts
