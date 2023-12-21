@@ -13,19 +13,11 @@ const CommentsList = ({ campsiteId }) => {
   const errMsg = useSelector((state) => state.comments.errMsg);
 
   if (isLoading) {
-    return (
-      <Col>
-        <Loading />
-      </Col>
-    );
+    return <Loading />;
   }
 
   if (errMsg) {
-    return (
-      <Col>
-        <Error errMsg={errMsg} />
-      </Col>
-    );
+    return <Error errMsg={errMsg} />;
   }
 
   if (comments && comments.length > 0) {

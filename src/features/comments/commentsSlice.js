@@ -1,6 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // import { COMMENTS } from '../../app/shared/oldData/COMMENTS';
-import { createAsyncThunk } from '@reduxjs/toolkit';
 import { baseUrl } from '../../app/shared/baseUrl';
 
 export const fetchComments = createAsyncThunk(
@@ -25,7 +24,7 @@ export const postComment = createAsyncThunk(
     });
 
     if (!response.ok) {
-      Promise.reject(response.status);
+      return Promise.reject(response.status);
     }
     const data = await response.json();
     dispatch(addComment(data));
